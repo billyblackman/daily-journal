@@ -3,9 +3,6 @@
     flex-direction: column;
     flex-basis: 40%;
     background-color: rgb(125, 210, 243);
+    font-family: monospace;
 }
 
-.form {
-    display: flex;
-    flex-basis: 30%;
-}
