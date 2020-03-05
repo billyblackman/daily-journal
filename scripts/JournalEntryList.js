@@ -5,7 +5,9 @@
  *    data provider component
  */
 import { useJournalEntries } from "./JournalDataProvider.js"
-import JournalEntryComponent from "./JournalEntry.js"
+
+import { JournalEntryComponent } from "./JournalEntry.js"
+
 
 // DOM reference to where all entries will be rendered
 const entryLog = document.querySelector("#entryLog")
@@ -19,7 +21,9 @@ const EntryListComponent = () => {
             Invoke the component that returns an
             HTML representation of a single entry
         */
-        entryLog.innerHTML += JournalEntryComponent(entry)
+
+        const htmlRepresentationOfJournalEntry = JournalEntryComponent(entry)
+        entryLog.innerHTML += htmlRepresentationOfJournalEntry
     }
 }
 
